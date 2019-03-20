@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    font-size: 100%;
+    background-color: #414b5a;
+}
+
+
+#nav {
+    background-color: #28292c;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+#logo {
+    float: left;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
+    display: block;
+    padding left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;
+
+    color: #ccc;
+    line-height: 22px;
+    position: static;
+    vertical-align: middle;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.kampagner {
+    margin-right: 160px;
+}
+
+
+
+#section {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+    background-color: #414b5a;
+}
+
+#section1 {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+    background-color: #eaeaea;
+}
+
+#section2 {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+    background-color: #414b5a;
+}
+
+.piechart {
+    background: #ddd;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    position: relative;
+
+}
+
+
+
+.pie1 {
+    fill: none;
+    stroke: #123456;
+    stroke-width: 100;
+    stroke-dasharray: 10 632;
+    stroke-dashoffset: 0;fill: none;
+    stroke: #79BD5A;
+    transition: all 1s ease;
+}
+
+.resultat {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    text-align: center;
+    color: orange;
+}
+
+#section3 {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+    background-color: #eaeaea;
+}
+
+#section4 {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+    background-color: #414b5a;
+}
+
+#section5 {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+    background-color: #eaeaea;
+}
+
+#section6 {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+    background-color: #414b5a;
+}
+
+#section7 {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+    background-color: #eaeaea;
+}
+
+#lastsection {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+    background-color: #414b5a;
+}
+
+#footer {
+    width: 1565;
+    padding: 5px;
+    height: 200px;
+
+    background-color: #28292c;
+    color: #9ea1a5;
+}
