@@ -27,7 +27,7 @@
              pie.setAttribute("data-value", valueArray[i]);
              // console.log(pie);
          });
-         document.querySelector(".resultat").innerHTML = `<p>${46} % </p></div>`;
+         // document.querySelector(".resultat").innerHTML = `<p>${46} % </p></div>`;
      }
      //        document.querySelector(".piechart").addEventListener("mouseover", e => {
      //            let valgt = e.target.getAttribute("data-value");
