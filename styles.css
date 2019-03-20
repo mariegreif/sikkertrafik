@@ -102,30 +102,39 @@ li a {
 
 }
 
+.linje {
+    stroke: #eaeaea;
+    stroke-width: 2
+}
+
+
 .piechart {
     background: #eaeaea;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     transform: rotate(-90deg);
-    margin-left: 15vw;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-self: center;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 280px 30px auto;
 
+}
 
+p {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 i {
 
     font-family: 'Exo', sans-serif;
-    font-size: 10vw;
-    position: relative;
-    left: 46vw;
-    bottom: 40vw
+    font-size: 5vw;
+    margin-top: 10vw;
+    color: #79BD5A;
 }
 
 
@@ -140,6 +149,11 @@ i {
     transition: all 1s ease;
 
 
+}
+
+.linje {
+    margin-top: 10vw;
+    width: 70%;
 }
 
 #section3 {
@@ -198,7 +212,7 @@ i {
 @media only screen and (min-width: 768px) {
 
     #section2 {
-        height: 500px;
+        height: 600px;
     }
 
     h1 {
@@ -217,7 +231,7 @@ i {
         border-radius: 50%;
         transform: rotate(-90deg);
         margin-top: 5vw;
-        margin-left: 5vw;
+        margin-left: 7vw;
 
 
 
@@ -225,9 +239,22 @@ i {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 270px 100px 100px auto;
 
+    }
 
+    .linje {
+        margin-top: 10vw;
+        margin-left: 5vw;
+    }
+
+    p {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    i {
+        margin-top: 4vw;
     }
 }
 
@@ -241,5 +268,31 @@ i {
     .piechart {
         width: 350px;
         height: 350px;
+
+    }
+
+    h1 {
+        text-align: center;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 350px 130px 130px auto;
+
+    }
+
+    .linje {
+        margin-top: 10vw;
+        margin-left: 5vw;
+    }
+
+    p {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    i {
+        margin-top: 4vw;
     }
 }
