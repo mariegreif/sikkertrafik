@@ -18,12 +18,13 @@ h1,
 h2,
 h3 {
     font-family: 'Exo', sans-serif;
-    margin: 2vw;
+    margin: 5vw;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
     margin: 5vw;
+    line-height: 1.6;
 }
 
 /***********HEADER / NAV*******************/
@@ -95,7 +96,7 @@ li a {
 
 #section2 {
     width: 100%;
-    height: 100%;
+    height: 700px;
     background-color: #414b5a;
     color: #EAEAEA;
 
@@ -118,15 +119,14 @@ li a {
 
 }
 
-p {}
-
-/*i {
+i {
 
     font-family: 'Exo', sans-serif;
     font-size: 10vw;
-    display: inline-block;
-
-}*/
+    position: relative;
+    left: 46vw;
+    bottom: 40vw
+}
 
 
 .pie1 {
@@ -197,12 +197,16 @@ p {}
 
 @media only screen and (min-width: 768px) {
 
+    #section2 {
+        height: 500px;
+    }
+
     h1 {
         margin-left: 2vw;
     }
 
     p {
-        margin: 10vw 5vw;
+        margin: 7vw 5vw;
     }
 
 
@@ -229,8 +233,12 @@ p {}
 /************ DESKTOP ***************/
 
 @media only screen and (min-width: 1024px) {
+    #section2 {
+        height: 600px;
+    }
+
     .piechart {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
     }
 }
