@@ -11,7 +11,7 @@ html {
     margin: auto;
     font-size: 100%;
     background-color: #414b5a;
-    position: relative;
+
 }
 
 h1,
@@ -25,6 +25,7 @@ p {
     font-family: 'Open Sans', sans-serif;
     margin: 5vw;
     line-height: 1.6;
+    text-align: left;
 }
 
 /***********HEADER / NAV*******************/
@@ -96,7 +97,7 @@ li a {
 
 #section2 {
     width: 100%;
-    height: 700px;
+    height: 750px;
     background-color: #414b5a;
     color: #EAEAEA;
 
@@ -104,7 +105,7 @@ li a {
 
 .linje {
     stroke: #eaeaea;
-    stroke-width: 2
+    stroke-width: 1;
 }
 
 
@@ -119,28 +120,41 @@ li a {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 280px 30px auto;
+    text-align: center;
 
 }
 
-p {
+h2 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    text-align: center;
 }
 
-i {
+p {}
 
+
+
+
+.resultat {
+    transform: rotate(90deg);
     font-family: 'Exo', sans-serif;
-    font-size: 5vw;
-    margin-top: 10vw;
-    color: #79BD5A;
+    stroke: #eaeaea;
+
+
 }
+
+.oevrigt {
+    transform: rotate(90deg);
+    font-family: 'Exo', sans-serif;
+    stroke: #ddd;
+
+
+}
+
+
 
 
 .pie1 {
     fill: none;
-    stroke: #123456;
     stroke-width: 100;
     stroke-dasharray: 10 632;
     stroke-dashoffset: 0;
@@ -151,10 +165,7 @@ i {
 
 }
 
-.linje {
-    margin-top: 10vw;
-    width: 70%;
-}
+
 
 #section3 {
     width: 1565;
@@ -220,7 +231,7 @@ i {
     }
 
     p {
-        margin: 7vw 5vw;
+        text-align: left;
     }
 
 
@@ -239,23 +250,21 @@ i {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 270px 100px 100px auto;
+        grid-template-columns: auto auto;
+        grid-gap: 2vw;
 
     }
 
-    .linje {
-        margin-top: 10vw;
-        margin-left: 5vw;
+    h2 {
+        grid-column-start: 2;
     }
+
 
     p {
-        grid-column-start: auto;
-        grid-column-end: auto;
+        grid-column-end: 2
     }
 
-    i {
-        margin-top: 4vw;
-    }
+
 }
 
 /************ DESKTOP ***************/
@@ -276,20 +285,12 @@ i {
 
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: 350px 130px 130px auto;
+    .grid-container {}
 
-    }
-
-    .linje {
-        margin-top: 10vw;
-        margin-left: 5vw;
-    }
 
     p {
-        grid-column-start: auto;
-        grid-column-end: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
     i {
