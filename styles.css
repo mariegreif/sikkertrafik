@@ -95,17 +95,14 @@ li a {
     background-color: #eaeaea;
 }
 
+/****************** PIECHART SECTION ****************/
+
 #section2 {
     width: 100%;
-    height: 750px;
+    height: 800px;
     background-color: #414b5a;
     color: #EAEAEA;
 
-}
-
-.linje {
-    stroke: #eaeaea;
-    stroke-width: 1;
 }
 
 
@@ -165,14 +162,33 @@ p {}
 
 }
 
-
+/****************** CYKELHJELM SECTION ****************/
 
 #section3 {
     width: 1565;
     padding: 5px;
-    height: 200px;
+    height: 700px;
     background-color: #eaeaea;
+    color: #414b5a;
 }
+
+#textbox3 a {
+    color: #FE6975;
+    font-family: 'Exo', sans-serif;
+    text-decoration: none;
+    margin: 5vw;
+}
+
+#imgbox3 img {
+    width: 60%;
+    margin-top: 6vw;
+}
+
+#imgbox3 {
+    text-align: center;
+}
+
+
 
 #section4 {
     width: 1565;
@@ -244,8 +260,6 @@ p {}
         margin-top: 5vw;
         margin-left: 7vw;
 
-
-
     }
 
     .grid-container {
@@ -262,6 +276,16 @@ p {}
 
     p {
         grid-column-end: 2
+    }
+
+    #section3 {
+        height: 400px;
+        justify-self: center;
+    }
+
+    #section3 img {
+        width: 100%;
+        padding: 2vw;
     }
 
 
@@ -296,4 +320,15 @@ p {}
     i {
         margin-top: 4vw;
     }
+
+    #section3 {
+        height: 500px;
+
+    }
+
+    #section3 img {
+        width: 70%;
+
+    }
+
 }
