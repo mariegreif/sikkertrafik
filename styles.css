@@ -1,4 +1,5 @@
 /***********GENERELLE INSTILLINGER*******************/
+@import url(https: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css)
 
 * {
     box-sizing: border-box;
@@ -11,6 +12,7 @@ html {
     margin: auto;
     font-size: 100%;
     background-color: #414b5a;
+    scroll-behavior: smooth;
 
 }
 
@@ -26,6 +28,33 @@ p {
     margin: 5vw;
     line-height: 1.6;
     text-align: left;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    float: left;
+    border-style: solid;
+    border-color: #5280CC;
+    margin-top: 2vw;
+
+}
+
+.fa-facebook {
+    color: #5280CC;
+}
+
+.fa-twitter {
+    color: #5280CC;
+}
+
+#so-me {
+    margin-left: 5vw;
 }
 
 /***********HEADER / NAV*******************/
@@ -207,6 +236,14 @@ p {
     height: 700px;
     background-color: #eaeaea;
     color: #414b5a;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#section-graf .grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+
 }
 
 #section-graf img {
@@ -290,6 +327,14 @@ i {
     height: 700px;
     background-color: #eaeaea;
     color: #eaeaea;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#section-hjelm .grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+
 }
 
 #section-hjelm a {
@@ -325,6 +370,20 @@ i {
     height: 200px;
     background-color: #eaeaea;
 }
+
+
+/**********PIL TIL TOPPEN***********/
+
+.up a img {
+    width: 15vw;
+    height: 30vw;
+    float: right;
+    margin-right: 10vw;
+
+}
+
+.up:hover {}
+
 
 #footer {
     width: 1565;
@@ -370,6 +429,12 @@ i {
 
     }
 
+    #section-hjelm .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+    }
+
     h2 {
         grid-column-start: 2;
     }
@@ -404,7 +469,7 @@ i {
 
 @media only screen and (min-width: 1024px) {
     #section-pie {
-        height: 600px;
+        height: 650px;
     }
 
     .piechart {
@@ -427,7 +492,7 @@ i {
     }
 
     #section-graf {
-        height: 500px;
+        height: 600px;
     }
 
 
