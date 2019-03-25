@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Rådet for sikker trafik</title>
     <link href="https://fonts.googleapis.com/css?family=Exo:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -15,100 +16,113 @@
         <div id="logo">
             <img src="img/logo_sikkertrafik.png" alt="logo">
         </div>
-
-        <!--
-        <ul>
-            <li class="kampagner"><a href="#kampagner">kampagner</a></li>
+        <div id="menuknap">☰</div>
+        <ul id="mobile" class="hidden">
+            <li><a href="#kampagner">kampagner</a></li>
             <li><a href="#raadogviden">råd og viden</a></li>
             <li><a href="#bornogunge">børn og unge</a></li>
             <li><a href="#samarbejde">samarbejde</a></li>
-
             <li><a href="#video">video</a></li>
             <li><a href="#presse">presse</a></li>
             <li><a href="#omos">om os</a></li>
 
-
-
         </ul>
--->
 
+        <ul id="desktop">
+            <li><a href="#omos">om os</a></li>
+            <li><a href="#presse">presse</a></li>
+            <li><a href="#video">video</a></li>
+            <li><a href="#samarbejde">samarbejde</a></li>
+            <li><a href="#bornogunge">børn og unge</a></li>
+            <li><a href="#raadogviden">råd og viden</a></li>
+            <li><a href="#kampagner">kampagner</a></li>
+        </ul>
     </div>
+    <ul id="undernav">
+        <li><a href="#video-section">Video</a></li>
+        <li><a href="#section-pie">Balance</a></li>
+        <li><a href="#section-graf">Skader</a></li>
+        <li><a href="#section-hjelm">Cykelhjelm</a></li>
+        <li><a href="#section-balance">Øvelser</a></li>
+    </ul>
+
 
 
 
     <div id="path"></div>
 
 
-    <div id="section">
+    <div id="video-section">
         <div id="textbox"></div>
         <div id="imgbox"></div>
 
     </div>
 
-    <div id="section1">
-        <div id="textbox1"></div>
-        <div id="imgbox1"></div>
-
-    </div>
-
-    <div id="section2">
+    <div id="section-pie">
         <h1>Uheld blandt +65 år cyklister er oftest forbundet med
             manglende balance.</h1>
         <div class="grid-container">
             <svg class="piechart" viewbox="0 0 100 100">
+
                 <circle r="50" cx="50" cy="50" class="pie1" />
                 <text class="resultat" x="60" y="-60">46%</text>
                 <!--                <text class="oevrigt" x="10" y="-35">54%</text>-->
+
             </svg>
+
             <txt>
                 <h2>46% mistede balancen når de væltede på cykel. </h2>
                 <p></p>
                 <p>Ved 25-års alderen begynder vores styrke og balanceevne at blive dårligere, og risikoen for at vælte på cyklen større. <br><br>
-                    Ifølge en undersøgelse, hvor man har spurgt personer over 65 år, hvorfor de er væltet på cyklen, svarede 46% at de væltede på grund af manglende balance. Det kan for eksempel være, når man skal stå af og på cyklen.</p>
+                    Ifølge en undersøgelse af Epinion, hvor man spurgte personer i alderen +65 år som væltet på cykel, svarede 46% at de væltede grundet manglende balance. Det kan for eksempel være ved af- og påstigning af cyklen, eller når man orienterer sig i trafikken. Derfor er det vigtigt at du træner din balance hver dag. Længere ned på siden kan du finde nogle gode øvelser som stærker din balance og styrke. </p>
             </txt>
         </div>
 
 
     </div>
 
-    <div id="section3">
+
+    <div id="section-graf">
+        <h1>Ældre skader - Skulder, Arm og Hånd</h1>
         <div class="grid-container">
+            <div id="textbox1">
+
+                <p>
+                    Når ældre kommer til skade, er det ofte værrer skader end når yngre gør.
+                    Det er derfor vigtigt at fokusere på at undgå dem.
+                    Størstedelen af skader der sker hos ældre, sker med skuldren, armen eller håndledet.
+                    Disse skader sker dobbelt så meget som alle andre skader.
+                    Heldigvis er hoved skader, blandt det laveste antal hvilket kunne tyde på at ældre rent faktisk bruger cykelhjelmen.</p>
+            </div>
+            <div id="imgbox1">
+                <img src="img/graf-ny.svg" alt="skader" />
+            </div>
+        </div>
+    </div>
+
+    <div id="section-hjelm">
+        <div class="grid-container">
+
+            <div id="imgbox3">
+                <img src="img/hjelm-2-lille.jpg" alt="hjelm">
+            </div>
             <div id="textbox3">
                 <h1>Husk cykelhjelm</h1>
                 <p>44% af danskerne har gjort op med dårlige undskyldninger om, hvorfor de ikke har cykelhjelm på. Vi vil blot påminde dig om, at din beslutning ikke alene påvirker dig, men også alle omkring dig.</p>
                 <a href="https://www.sikkertrafik.dk/raad-og-viden/paa-cykel/cykelhjelm">Her finder du gode råd og viden om cykelhjelm</a>
             </div>
-            <div id="imgbox3">
-                <img src="img/hjelm-2-lille.jpg" alt="hjelm">
-            </div>
         </div>
-    </div>
-
-    <div id="section4">
-        <div id="textbox4"></div>
-        <div id="imgbox4"></div>
 
     </div>
 
-    <div id="section5">
-        <div id="textbox5"></div>
-        <div id="imgbox5"></div>
 
-    </div>
-
-    <div id="section6">
-        <div id="textbox6"></div>
-        <div id="imgbox6"></div>
-
-    </div>
-
-    <div id="section7">
+    <div id="section-balance">
         <div id="textbox7"></div>
         <div id="imgbox7"></div>
 
     </div>
 
-    <div id="lastsection">
+    <div id="section-portfolio">
         <!--        a href link til de andre kampagner-->
     </div>
 
