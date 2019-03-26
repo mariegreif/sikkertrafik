@@ -395,7 +395,7 @@ i {
 /****************** CYKELHJELM SECTION ****************/
 
 #section-hjelm {
-    width: 1565;
+    width: 100%;
     padding: 5px;
     height: 650px;
     background-color: #414b5a;
@@ -433,7 +433,7 @@ i {
 
 
 #section-portfolio {
-    width: 1565;
+    width: 100%;
     padding: 5px;
     height: 100px;
     background-color: #eaeaea;
