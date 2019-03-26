@@ -20,7 +20,12 @@ h1,
 h2,
 h3 {
     font-family: 'Exo', sans-serif;
-    margin: 5vw;
+}
+
+h1 {
+    margin: 2vw 0 0 0;
+    margin-left: 5vw;
+
 }
 
 p {
@@ -57,9 +62,6 @@ p {
     color: #5280CC;
 }
 
-#so-me {
-    margin-left: 5vw;
-}
 
 /***********HEADER / NAV*******************/
 
@@ -78,7 +80,6 @@ p {
 }
 
 #undernav {
-    display: inline;
     background-color: #363D47;
     width: 100%;
     height: 50px;
@@ -92,11 +93,12 @@ p {
     list-style-type: none;
     text-align: left;
     padding-top: 3vw;
+    padding-left: 1vw;
 
 }
 
 #undernav li {
-    display: inline;
+    display: inline-block;
     text-decoration: none;
     list-style-type: none;
     padding: 1vw;
@@ -108,6 +110,8 @@ p {
     font-family: 'Exo', sans-serif;
 
 }
+
+
 
 #undernav a:hover {
     font-style: oblique;
@@ -145,7 +149,7 @@ p {
 }
 
 #mobile li {
-    padding: 1rem;
+    padding: 1.5vw;
 }
 
 #mobile a:hover {
@@ -232,7 +236,6 @@ p {
 
 #intro-section {
     width: 100%;
-    padding: 5px;
     height: 400px;
     background-color: #414b5a;
     color: #eaeaea;
@@ -251,32 +254,62 @@ p {
     color: #79BD5A;
     margin-top: 0;
     margin-bottom: 0;
+
 }
 
 #intro-section .navn {
     color: #eaeaea;
 }
 
+#intro-section h3 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.so-me {
+    margin-left: 5vw;
+}
+
 /************ KAMPAGNE VIDEO ******************/
 
 #video-section {
-    width: 1565;
-    padding: 5px;
-    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
     background-color: #eaeaea;
+    color: #414b5a;
+    text-align: center;
+
 }
+
+.kampagne-video {
+    position: relative;
+    padding-bottom: 26.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 5vw;
+    margin-top: 2vw;
+}
+
+.kampagne-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /**************** GRAF SECTION ********************/
 
 #section-graf {
     width: 100%;
-    padding: 5px;
     height: 700px;
     background-color: #eaeaea;
     color: #414b5a;
     display: grid;
-    grid-template-columns: 1fr;
 }
 
 #section-graf .grid-container {
@@ -308,11 +341,12 @@ p {
     transform: rotate(-90deg);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     justify-self: center;
+    margin-top: 6vw;
 }
 
-.grid-container {
-    text-align: center;
 
+.grid-grid {
+    text-align: center;
 }
 
 h2 {
@@ -363,16 +397,15 @@ i {
 #section-hjelm {
     width: 1565;
     padding: 5px;
-    height: 700px;
-    background-color: #eaeaea;
+    height: 650px;
+    background-color: #414b5a;
     color: #eaeaea;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 #section-hjelm .grid-container {
     display: grid;
     grid-template-rows: auto auto auto;
+
 
 }
 
@@ -385,28 +418,15 @@ i {
 
 #imgbox3 img {
     width: 60%;
-    margin-top: 6vw;
+    margin-top: 4vw;
+    justify-self: center;
 }
 
 #imgbox3 {
-    text-align: center;
-}
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: center;
 
-
-
-#section-hjelm {
-    width: 1565;
-    padding: 5px;
-    height: 650px;
-    background-color: #414b5a;
-}
-
-
-#section-balance {
-    width: 1565;
-    padding: 5px;
-    height: 650px;
-    background-color: #eaeaea;
 }
 
 
@@ -414,19 +434,54 @@ i {
 #section-portfolio {
     width: 1565;
     padding: 5px;
-    height: 200px;
+    height: 100px;
     background-color: #eaeaea;
 }
 
 #section-balance {
+    width: 100%;
+    height: 750px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
+    background-color: #eaeaea;
+    color: #414b5a;
 }
 
 #videobox {
-    width: 10vv;
-    height: 45vh;
+    text-align: center;
+    margin: 2vw;
 }
+
+iframe {
+    width: 100%;
+}
+
+/********** PORTFOLIO **************/
+
+#section-portfolio {
+    background-color: #414b5a;
+    color: #eaeaea;
+    text-align: center;
+    width: 100%;
+    height: 40vw;
+}
+
+#section-portfolio a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    border-bottom-style: solid;
+
+}
+
+#section-portfolio h1 {
+    margin: 5vw;
+}
+
+#section-portfolio a:hover {
+    color: #79BD5A;
+}
+
 
 /**********PIL TIL TOPPEN***********/
 
@@ -489,7 +544,7 @@ footer p {
     }
 
     h1 {
-        margin-left: 2vw;
+        margin-left: 5vw;
     }
 
     p {
@@ -508,6 +563,10 @@ footer p {
 
     }
 
+    #section-pie txt {
+        margin-top: 4vw;
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: auto auto;
@@ -521,14 +580,11 @@ footer p {
 
     }
 
-    h2 {
-        grid-column-start: 2;
-    }
-
-
     p {
         grid-column-end: 2
     }
+
+
 
     #section-hjelm {
         height: 400px;
@@ -562,107 +618,162 @@ footer p {
         margin: 0 10vw 0 5vw;
     }
 
-
-}
-
-/************ DESKTOP ***************/
-
-@media only screen and (min-width: 1024px) {
-    #section-pie {
-        height: 650px;
+    #section-balance {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 400px;
     }
 
-    .piechart {
-        width: 350px;
-        height: 350px;
-
-    }
-
-    h1 {
-        text-align: center;
-
+    #videobox {
+        margin-top: 15vw;
+        width: 10vv;
+        height: 45vh;
     }
 
     #section-graf .grid-container {
-        grid-template-columns: 600px auto;
-    }
-
-    #section-graf img {
-        width: 100%;
-    }
-
-    #section-graf {
-        height: 600px;
-    }
-
-
-    p {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    i {
-        margin-top: 4vw;
-    }
-
-    #section-hjelm {
-        height: 550px;
-
-    }
-
-    #section-hjelm img {
-        width: 70%;
-
-    }
-
-    #menu {
-        display: none;
-    }
-
-    #menuknap {
-        display: none;
-    }
-
-
-    #desktop {
-        display: block;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-
-    }
-
-    #undernav {
-        top: 5vw;
-    }
-
-    #undernav {
-        padding-top: 1vw;
-    }
-
-    .fot {
         display: grid;
         grid-template-columns: 1fr;
-        text-align: center;
+
+    }
+
+    #imgbox1 {
+        width: 70%;
         justify-self: center;
     }
 
-    .some {
-        justify-self: center;
-    }
+    /************ DESKTOP ***************/
 
-    #intro-section {
-        height: 300px;
-    }
+    @media only screen and (min-width: 1024px) {
+        #section-pie {
+            height: 550px;
+        }
 
-    #intro-section h3 {
-        margin: 0 20vw 0 20vw;
-    }
+        .piechart {
+            width: 350px;
+            height: 350px;
 
-    #intro-section h1 {
-        margin: 0 20vw 0 20vw;
-    }
+        }
 
-}
+        h1 {}
+
+        #section-graf {
+            grid-template-columns: 550px auto;
+        }
+
+        #section-graf img {
+            width: 100%;
+
+        }
+
+        #imgbox1 {
+            justify-self: center;
+            margin-top: 8vw;
+        }
+
+        #section-graf {
+            height: 500px;
+        }
+
+        #section-graf .so-me {
+            height: 5vw;
+        }
+
+
+
+        #section-graf p {
+            margin-top: 1vw;
+        }
+
+        p {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        i {
+            margin-top: 4vw;
+        }
+
+        #section-hjelm {
+            height: 400px;
+
+        }
+
+        #section-hjelm img {
+            width: 50%;
+            justify-self: left;
+
+        }
+
+
+
+        #menu {
+            display: none;
+        }
+
+        #menuknap {
+            display: none;
+        }
+
+
+        #desktop {
+            display: block;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+
+        }
+
+        #undernav {
+            top: 5vw;
+        }
+
+        #undernav {
+            padding-top: 1vw;
+        }
+
+        .fot {
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+            justify-self: center;
+        }
+
+        .some {
+            justify-self: center;
+        }
+
+        #intro-section {
+            height: 300px;
+        }
+
+        #intro-section h3 {
+            margin: 0 20vw 0 20vw;
+        }
+
+        #intro-section h1 {
+            margin: 0 20vw 0 20vw;
+        }
+
+
+        #videobox {
+            margin-top: 10vw;
+        }
+
+        .kampagne-video {
+            margin-right: 20vw;
+            margin-left: 20vw;
+
+        }
+
+        .kampagne-video iframe {}
+
+        #textbox3 p {
+            margin-left: 0;
+        }
+
+        #textbox3 h1 {
+            margin-left: 0;
+        }
+    }
