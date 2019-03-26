@@ -53,6 +53,10 @@ p {
     color: #5280CC;
 }
 
+.fa-linkedin {
+    color: #5280CC;
+}
+
 #so-me {
     margin-left: 5vw;
 }
@@ -385,13 +389,41 @@ i {
 .up:hover {}
 
 
-#footer {
-    width: 1565;
-    padding: 5px;
-    height: 200px;
-
+.fot {
+    width: 100%;
     background-color: #28292c;
     color: #9ea1a5;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+
+}
+
+footer p {
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+}
+
+.fot .fa {
+    color: #393D46;
+    border-color: #393D46;
+    padding: 7px;
+    font-size: 35px;
+    width: 35px;
+    margin: 3vw;
+    margin-left: 2vw;
+
+}
+
+.fot a {
+    color: #9ea1a5;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+
+}
+
+.fot i {
+    text-align: center;
 }
 
 /******************** TABLET *******************/
@@ -460,6 +492,10 @@ i {
 
     #undernav {
         padding-top: 1.5vw;
+    }
+
+    .adress {
+        text-align: center;
     }
 
 
@@ -541,5 +577,18 @@ i {
     #undernav {
         padding-top: 1vw;
     }
+
+    .fot {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .some {
+        justify-self: center;
+    }
+
+
 
 }
