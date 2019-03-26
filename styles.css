@@ -414,6 +414,7 @@ i {
     font-family: 'Exo', sans-serif;
     text-decoration: none;
     margin: 5vw;
+    border-bottom-style: solid;
 }
 
 #imgbox3 img {
@@ -467,10 +468,11 @@ iframe {
 }
 
 #section-portfolio a {
-    color: #eaeaea;
-    text-decoration: none;
-    font-family: 'Exo', sans-serif;
     border-bottom-style: solid;
+    color: #FE6975;
+    font-family: 'Exo', sans-serif;
+    text-decoration: none;
+
 
 }
 
@@ -478,9 +480,7 @@ iframe {
     margin: 5vw;
 }
 
-#section-portfolio a:hover {
-    color: #79BD5A;
-}
+#section-portfolio a:hover {}
 
 
 /**********PIL TIL TOPPEN***********/
